@@ -58,9 +58,9 @@ def patient_normalise(data):
 ~~~
 {: .language-python}
 
-**Note:** *there are intentional mistakes in the above code,
+***Note:** there are intentional mistakes in the above code,
 which will be detected by further testing and code style checking below
-so bear with us for the moment!*
+so bear with us for the moment.*
 
 In the code above, we first go row by row
 and find the maximum inflammation value for each patient
@@ -710,9 +710,7 @@ Since we're adding an extra feature to our CI workflow,
 let's start this from a new feature branch from the `develop` branch:
 
 ~~~
-$ git checkout develop
-$ git branch pylint-ci
-$ git checkout pylint-ci
+$ git switch -c pylint-ci develop # note a shorthand for creating a branch from another and switching to it
 ~~~
 {: .language-bash}
 
